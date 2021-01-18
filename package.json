@@ -1,0 +1,17 @@
+{
+  "name": "arcade-game-project",
+  "version": "1.0.0",
+  "description": "Project for Front-End Nanodegree Program by Udacity",
+  "main": "./js/app.js",
+  "scripts": {
+    "build": "babel js -d jsES5"
+  },
+  "author": "Anna Szalkiewicz",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0"
+  }
+}

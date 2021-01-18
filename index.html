@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Arcade Game Project</title>
+  <meta name="description" content="Classic Arcade Game Project for Google Scolarphip Front-End Web Developer Nanodegree Program by Udacity">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="title">Cross the road</h1>
+      <h2 class="subtitle">Classic Arcade Game</h2>
+    </header>
+    <nav class="nav-main">
+      <div class="row">
+        <div class="nav-title">Lives:</div>
+        <div class="nav-title">Level:</div>
+        <div class="nav-title">Score:</div>
+        <div class="nav-title">Time:</div>
+      </div>
+      <div class="row">
+        <div class="live" id="lives">
+          <img src="img/heart.png" alt="One Live" class="heart">
+          <img src="img/heart.png" alt="One Live" class="heart">
+          <img src="img/heart.png" alt="One Live" class="heart">
+        </div>
+        <div class="level" id="level"></div>
+        <div class="score" id="score"></div>
+        <div class="timer" id="timer"></div>
+      </div>
+    </nav>
+    <div class="button-container">
+      <button class="settings" id="settings-button">
+        <i class="material-icons">settings</i>
+      </button>
+    </div>
+    <main class="container" id="main"></main>
+    <footer class="footer">
+      <p class="copyright">Written and coded by
+        <a href="https://mywebgraphicdesign.com">Anna Szalkiewicz</a>
+      </p>
+    </footer>
+  </div>
+
+  <div class="settings-modal" id="settings-modal" tabindex="-1">
+    <span class="close" id="close-button" tabindex="0" aria-label="Close">&times;</span>
+    <h1 class="avatar-title">Choose Avatar</h1>
+    <form class="avatar-container" id="avatar-container">
+      <input type="radio" name="avatar" id="boy" value="boy" tabindex="0" checked>
+      <label for="boy">
+        <img src="img/char-boy.png" alt="Boy avatar" class="avatar-image">
+      </label>
+      <input type="radio" name="avatar" id="cat-girl" value="cat">
+      <label for="cat-girl">
+        <img src="img/char-cat-girl.png" alt="Cat girl avatar" class="avatar-image">
+      </label>
+      <input type="radio" name="avatar" id="horn-girl" value="horn">
+      <label for="horn-girl">
+        <img src="img/char-horn-girl.png" alt="Horn girl avatar" class="avatar-image">
+      </label>
+      <input type="radio" name="avatar" id="pink-girl" value="pink">
+      <label for="pink-girl">
+        <img src="img/char-pink-girl.png" alt="Pink girl avatar" class="avatar-image">
+      </label>
+      <input type="radio" name="avatar" id="princess-girl" value="princess">
+      <label for="princess-girl">
+        <img src="img/char-princess-girl.png" alt="Princess girl avatar" class="avatar-image">
+      </label>
+    </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/resources.js"></script>
+  <script src="./js/engine.js"></script>
+  <script src="./jsES5/app.js"></script>
+</body>
+
+</html>
